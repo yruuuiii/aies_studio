@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  background: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+}
+/* 上部バー */
+.topbar {
+  background: #dfd6cd;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.top-left img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.top-center {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 13px;
+}
+
+.top-right {
+  font-size: 13px;
+}
+
+/* メインヘッダー */
+.main-header {
+  background: #873;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 左ナビ */
+.nav-left a {
+  margin-right: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* ロゴ中央 */
+.logo img {
+  height: 32px; /* AIESロゴの高さ調整 */
+  display: block;
+}
+
+/* 右ナビ */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  font-size: 15px;
+  color: #111;
+  text-decoration: none;
+}
+
+.icon-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+/* COLLECTION TITLE */
+.collection-title {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.collection-title h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.collection-title p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CATEGORY BANNERS */
+.category-grid {
+  max-width: 1200px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.category-card {
+  position: relative;
+}
+.category-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.category-card .label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* FILTER BAR */
+.filter-bar {
+  max-width: 1200px;
+  margin: 10px auto 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+  font-size: 14px;
+}
+
+/* PRODUCT GRID (完全SlimPrint風) */
+.product-grid {
+  max-width: 1200px;
+  margin: 30px auto 80px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+/* IMAGE */
+.img-wrap {
+  position: relative;
+}
+.img-wrap img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Slimprintと同じ比率 */
+  object-fit: cover;
+  border-radius: 6px;
+}
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* TEXT */
+.product-card h3 {
+  font-size: 16px;
+  margin: 12px 0 4px;
+}
+.rating {
+  font-size: 13px;
+  color: #777;
+}
+.price {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ----------------------------------------
+   accountログイン
+----------------------------------------- */
+.lgin_body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ----------------------------------------
+   Login Box
+----------------------------------------- */
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 48px 30px 60px;
+  text-align: center;
+}
+
+/* ----------------------------------------
+   Logo
+----------------------------------------- */
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 48px;
+}
+
+/* ----------------------------------------
+   Buttons
+----------------------------------------- */
+.btn {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border: none;
+}
+
+/* Apple button */
+.apple-btn {
+  background: #000;
+  color: #fff;
+}
+.apple-btn:hover {
+  background: #222;
+}
+
+/* Google button */
+.google-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #000;
+}
+.google-btn:hover {
+  background: #f2f2f2;
+}
+
+/* Guest button */
+.guest-btn {
+  background: #efefef;
+  color: #000;
+}
+.guest-btn:hover {
+  background: #e0e0e0;
+}
+
+/* ----------------------------------------
+   Divider
+----------------------------------------- */
+.divider {
+  margin: 26px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

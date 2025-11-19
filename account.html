@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIESAccount</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Firebase SDK -->
+    <script
+      src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"
+      defer
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"
+      defer
+    ></script>
+
+    <!-- 外部ログイン処理 -->
+    <script src="js/aies_lgin.js" defer></script>
+  </head>
+
+  <body class="lgin_body">
+    <div class="login-box">
+      <div class="logo">AIES</div>
+
+      <button id="appleLogin" class="btn apple-btn">
+         Sign in with Apple
+      </button>
+
+      <button id="googleLogin" class="btn google-btn">
+        Sign in with Google
+      </button>
+
+      <div class="divider">または</div>
+
+      <button id="guestLogin" class="btn guest-btn">ゲストとして続行</button>
+    </div>
+  </body>
+</html>
